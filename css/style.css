@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/*grid*/
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 1.5fr 1.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header header header"
+      "nav nav nav nav nav"
+      "main main main main main"
+      "main main main main main"
+      "footer footer footer footer footer";
+  }
+  
+  .header { grid-area: header; }
+  
+  .nav { grid-area: nav; }
+  
+  .main { grid-area: main; }
+  
+  .footer { grid-area: footer; }
+
+.header{
+    display: grid;
+    align-content: center;
+    background-color: rgb(2, 24, 0);
+    
+}
+.nav{
+     display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    background-color: rgb(0, 0, 0);
+
+}
+
+
+
+/* index */
+.tituloPrincipal {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 20%;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: "Bitter", serif;
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.tituloPrincipal a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {      
+    display: grid;
+    grid-template-columns:repeat(5,1fr);
+    width: 80%;
+    height: 20%;
+    margin: 10px auto;
+    padding: 5px;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    list-style-type: none;
+}
+
+.listaMenu {
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    width: 80%;
+    height: 10%;
+    
+}
+
+.listaMenu a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #2a8c4a;
+
+}
+
+.mainPrincipal {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/izz-r-B41qE72VVJ8-unsplash.jpg);
+    background-size: cover;
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    padding: 10%;
+}
+
+.tituloSecundario {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 20%;
+    height: 10%;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 20px;
+    font-family: "Nunito", sans-serif;
+    font-size: 35px;
+    background-color: rgba(245, 245, 220, 0.385);
+}
+
+.parrafos {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 30%;
+    margin: 20px auto;
+    padding: 60px;
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    background-color: rgba(245, 245, 220, 0.385);
+    border-radius: 20px;
+}
+
+.contenedor {
+    display: inline-block;
+    width: 14%;
+    height: 10%;
+    margin: 0px auto;
+    padding: 12px;
+    border: solid 2px black;
+    border-radius: 20px;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    background-color: rgba(245, 245, 220, 0.529);
+}
+
+.newSletter a {
+    justify-content: center;
+    display: inline-block;
+    text-decoration: none;
+    color: #31470b;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    font-family: "Nunito", sans-serif;
+    background-color: #28861857;
+}
+
+.menuFooter {
+    display: flex;
+    width: 80%;
+    height: 5%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.listaMenuFooter {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 5%;
+    margin: 0 auto;
+    padding: 5px;
+    text-decoration: none;
+}
+
+/* News */
+.news{
+    background-image: url(../img/annie-spratt-w5xpOP5z1Uw-unsplash.jpg);
+    background-size: cover;
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    padding: 10%;
+
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-column-gap: 15px ;
+    grid-row-gap:15px ;
+
+}
+
+.productos div img{
+    width: 250px;
+    height: 250px;
+}
+
+.productos div {
+    display: flex;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+
+
+}
+
+.productos div a{
+    background-color: #726c6cfd;
+    color: #000;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+
+}
+
+
+
+
+/* servicios */
+
+.mainServicios {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/annie-spratt-w5xpOP5z1Uw-unsplash.jpg);
+    background-size: cover;
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    padding: 10%;
+}
+
+
+iframe {
+    margin: 0 auto;
+}
+
+.parrafosLocales {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 30%;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    background-color: rgba(245, 245, 220, 0.385);
+    border-radius: 20px;
+}
+/* Registro*/
+
+.mainRegistro {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/stefan-c-asafti-9p6pFEwq-wI-unsplash.jpg);
+    background-size: cover;
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    padding: 10%;
+    
+}
+.formulario {
+    
+    width: 70%;
+    height: 30%;
+    margin: auto;
+    padding: 20px;
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    background-color: rgba(245, 245, 220, 0.385);
+    border-radius: 20px;
+    box-shadow: 7px 13px 37px #000;
+   
+}
+
+.codeText{
+    width: 95%;
+    background: whitesmoke   ;
+    padding: 10px;
+    border-radius: 5px ;
+    margin-bottom: 15px;
+    border: 1px solid #28861857;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    
+}
+
+.boton{
+    width: 100%;
+    background:#28861857 ;
+    padding: 10px;
+    
+}
+
+/* media queries*/
+
+@media screen and (max-width: 635px){
+   
+    
+    
+    .menu {      
+        display: list-item;
+        width: 80%;
+        height: 20%;
+        margin: 10px auto;
+        padding: 5px;
+        font-family: "Nunito", sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        list-style-type: none;
+    }
+
+    .listaMenu {
+        display: flex;
+        justify-content: center;
+        display: inline-block;
+        width: 80%;
+        height: 10%;
+        box-shadow: 0px 2px rgba(0, 0, 0, 0.193);
+    }
+    
+
+
+
+
+}
+
+
+
+
+
+
