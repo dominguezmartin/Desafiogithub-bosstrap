@@ -196,13 +196,21 @@
     grid-template-rows: repeat(2,1fr);
     grid-column-gap: 15px ;
     grid-row-gap:15px ;
+   
 
 }
 
 .productos div img{
     width: 250px;
     height: 250px;
+    transition: 2s ease;
+    
 }
+
+.productos  div:hover  img  {
+    transform: scale(0.8);
+}
+
 
 .productos div {
     display: flex;
@@ -211,15 +219,16 @@
     flex-direction: column;
     align-content: flex-start;
     align-items: center;
-
+    cursor: pointer;
 
 }
 
 .productos div a{
-    background-color: #726c6cfd;
+    background-color:white;
     color: #000;
     text-decoration: none;
     font-family: "Nunito", sans-serif;
+    font-size: 130%;
 
 }
 
